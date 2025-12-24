@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="utf-8">
+    <title>Portofolio - Behar Korbi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(128,128,128); align-items: center; justify-content: center;">
+    <div class="bg-animated"></div>
+
+    <h1 class="one-by-one vonese-titull" style="margin-top: 50px; text-align: center;">PUNIMET E MIA</h1>
+
+    <div class="portfolio-grid">
+        <div class="portfolio-item one-by-one vonese-f1"><img src="BEHAR KORBI SFOND.jpg" alt="Punimi 1"></div>
+        <div class="portfolio-item one-by-one vonese-f2"><img src="bbk.jpg" alt="Punimi 2"></div>
+        <div class="portfolio-item one-by-one vonese-f3"><img src="EtikaNeMedia.jpg" alt="Punimi 3"></div>
+        <div class="portfolio-item one-by-one vonese-f4"><img src="AUDI RS6.jpg" alt="Punimi 4"></div>
+        <div class="portfolio-item one-by-one vonese-f5"><img src="CLS FINAL.jpg" alt="Punimi 5"></div>
+        <div class="portfolio-item one-by-one vonese-f6"><img src="PEAKY BLINDER.jpg" alt="Punimi 6"></div>
+        <div class="portfolio-item one-by-one vonese-f7"><img src="ADIDAS RUNNING FINAL.jpg" alt="Punimi 7"></div>
+        <div class="portfolio-item one-by-one vonese-f8"><img src="URBAN Poster.jpg" alt="Punimi 8"></div>
+        <div class="portfolio-item one-by-one vonese-f9"><img src="RROLLS ROYCE.jpg" alt="Punimi 9"></div>
+        <div class="portfolio-item one-by-one vonese-f10 item-center">
+    <img src="COCA COLA BK.jpg" alt="Punimi 10">
+</div>
+    </div>
+    <div style="display: flex; justify-content: center; width: 100%; margin: 60px 0;">
+    
+    <a href="Rreth_Meje.html" class="contact-btn one-by-one vonese-butoni-kthehu" style="
+        display: inline-block;
+        min-width: 200px;
+        padding: 15px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    ">
+        ← Kthehu Mbrapa
+    </a>
+    
+</div>
+<div id="lightbox" onclick="this.style.display='none'" style="
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.9); 
+    justify-content: center; 
+    align-items: center;
+    cursor: zoom-out;">
+    
+    <img id="lightbox-img" style="
+        max-width: 90%; 
+        max-height: 90%; 
+        border-radius: 10px; 
+        box-shadow: 0 0 30px rgba(255,255,255,0.2);
+        transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);">
+</div>
+
+<script>
+    // Funksioni që kap klikimin te çdo foto
+    document.querySelectorAll('.portfolio-item img').forEach(image => {
+        image.onclick = () => {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = image.src;
+        }
+    });
+</script>
+</body>
+</html>
