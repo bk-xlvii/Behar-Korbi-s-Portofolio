@@ -134,13 +134,13 @@ body{
     transform: translateY(-5px);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .grid-4-columns {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .grid-4-columns {
         grid-template-columns: 1fr;
     }
@@ -226,4 +226,5 @@ body{
 @keyframes zoomIn {
     from { transform: scale(0.7); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
+
 }
